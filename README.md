@@ -7,7 +7,7 @@ Play the [My Little Pony Matching Game](https://dianavile.github.io/Memory/).
 
 ## Printscreen mockup
 Here you see the final result:
-![Memory](https://github.com/dianavile/Udacity-Portfolio/blob/master/img/StartGame_Screen.png 'StartGame Screen')
+![Memory](StartGame_Screen.png)
 
 ## Instructions
 - Students are given a `startercode`(HTML and CSS styling) of the static Memory Game project.
