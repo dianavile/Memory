@@ -61,9 +61,9 @@ In order to let the game work properly, the following TODO list is needed:
 - __GIT:__[Learn Git Branching](https://learngitbranching.js.org/), [Oh Shit Git](http://ohshitgit.com/). 
 
 - __Fonts:__"Equestria.tff" from [Fontsplace](http://www.fontsplace.com/equestria-free-font-download.html)
-- __Backgroundpicture:_: [DevianArt by AllowedPlz ©2012-2018 MLP-Vector-Collabs*](https://orig00.deviantart.net/0ffb/f/2012/142/d/7/bg1small2_by_mlp_vector_collabs-d50sego.png)
+- __Backgroundpicture:__ [DevianArt by AllowedPlz ©2012-2018 MLP-Vector-Collabs*](https://orig00.deviantart.net/0ffb/f/2012/142/d/7/bg1small2_by_mlp_vector_collabs-d50sego.png)
 - __Images:__ [My Little Pony Wikia page](http://mlp.wikia.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki) 
-- __Emojis(unicode):__ [Emojipedia](https://emojipedia.org/)
+- __Emojis (unicode):__ [Emojipedia](https://emojipedia.org/)
 
 ## Contributing
 
