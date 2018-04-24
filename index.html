@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- Metatags & Title  -->
+  <meta charset="utf-8">
+
+  <title>Matching Game</title>
+  <meta content="diana vilé" name="author">
+  <meta content="Udacity FEND Memory Game Project" name="description">
+  <!--Viewport -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!--Stylesheets -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet prefetch">
+  <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet prefetch">
+  <link href="css/app.css" rel="stylesheet"><!-- References -->
+  <!--Icons retrieved from MPL Wiki My Little Pony: "http://mlp.wikia.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki" MLP.Wiki/" 
+   Emoticons retrieved from Emojipedia: "https://emojipedia.org/" -->
+</head>
+
+<body>
+  <!-- Container gameStart -->
+
+
+  <div class="container" id="gameStart">
+    <header>
+      <h1>My Little Pony Matching Game</h1>
+    </header>
+    <!-- Scorepanel with game settings: stars, moves, time & restart button -->
+
+
+    <section class="score-panel">
+      <ul class="stars">
+        <li><i class="fa fa-star"></i>
+        </li>
+
+
+        <li><i class="fa fa-star"></i>
+        </li>
+
+
+        <li><i class="fa fa-star"></i>
+        </li>
+      </ul>
+      Moves: <span class="moves" id="movesEl">0</span> Time: <span class="timer">00:00</span>
+
+      <div class="restart">
+        <i class="fa fa-repeat"></i>
+      </div>
+    </section>
+    <!-- Deck of Cards -->
+
+
+    <ul class="deck" id="deck">
+    </ul>
+  </div>
+  <!-- Modal Box, adapted from https://www.w3schools.com/howto/howto_css_modals.asp -->
+
+
+  <div id="modal">
+    <!-- Close the Modal -->
+    <span class="close, restart">&times;</span> <!-- Modal content -->
+
+
+    <h1 class="modal-title">Congratulations! 🦄</h1>
+
+
+    <h2 class="modal-rating">You won the game in:</h2>
+    <!-- Modal settings -->
+
+
+    <p><span class="timer" id="timer"></span>
+    </p>
+
+
+    <p id="totalMoves">Moves: <label class="moves"></label></p>
+
+
+    <ul class="stars">
+      <li style="list-style: none">Stars:</li>
+
+
+      <li><i class="fa fa-star"></i>
+      </li>
+
+
+      <li><i class="fa fa-star"></i>
+      </li>
+
+
+      <li><i class="fa fa-star"></i>
+      </li>
+    </ul>
+
+
+    <p class="modal-text">Friendship is Magic! 🌈</p>
+    <button class="restart" id="playAgain">Play Again</button>
+  </div>
+  <!-- JavaScript -->
+  <script src="js/app.js">
+  </script>
+</body>
+</html>
