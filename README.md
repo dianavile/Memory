@@ -16,7 +16,6 @@ Here you see the final result:
 ![StartScreen](https://github.com/dianavile/Memory/blob/master/img/StartGame_Screen.png)
 - The game:
 ![Game](https://github.com/dianavile/Memory/blob/master/img/My_Litle_Pony_Matching_Game.png)
-- Game End message: 
 ![Modal](https://github.com/dianavile/Memory/blob/master/img/Modal.png)
 
 ## Game Logics
