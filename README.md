@@ -4,7 +4,7 @@
 
 ## Instructions
 - Students are given a `Udacity startercode`(HTML and CSS styling) of the static Memory Game project.
-- __Goal__ is to convert the static project into an interative App game. 
+- __Goal__ is to __convert the static project into an interative App game__. 
 - Modifying HTML, CSS but basically the JavaScript file.
 
 ## Play the Game
@@ -16,7 +16,7 @@ Here you see the final result:
 ![StartScreen](https://github.com/dianavile/Memory/blob/master/img/StartGame_Screen.png)
 - The game:
 ![Game](https://github.com/dianavile/Memory/blob/master/img/My_Litle_Pony_Matching_Game.png)
--Game End message: 
+- Game End message: 
 ![Modal](https://github.com/dianavile/Memory/blob/master/img/Modal.png)
 
 ## Game Logics
