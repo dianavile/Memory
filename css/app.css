@@ -1,0 +1,337 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Font style, "font-face"
+ * adapted from: https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp;
+ */
+
+@font-face {
+  font-family: equestria;
+  src: url("../fonts/equestria.ttf");
+}
+
+/* Body */
+
+body {
+  background: #ffffff url("https://orig00.deviantart.net/0ffb/f/2012/142/d/7/bg1small2_by_mlp_vector_collabs-d50sego.png") no-repeat;
+  /* Background pattern from DevianArt by AllowedPlz ©2012-2018 MLP-Vector-Collabs*/
+  font-family: "equestria", sans-serif;
+  font-size: 36px;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Main Title */
+
+h1 {
+  font-family: "equestria", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: #ee3996;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+  width: 660px;
+  min-height: 680px;
+  background: linear-gradient(160deg, #7b86b6 0%, #91228f 100%);
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 12px 15px 20px 0 #2e3d49;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 3em;
+}
+
+.deck .card {
+  height: 125px;
+  width: 125px;
+  background: #75a8b6;
+  font-size: 0;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 2px 20px 0 #2e3d49;
+}
+
+.deck .card .open {
+  transform: rotateY(0);
+  background: #b1d2f3;
+  cursor: default;
+  display: initial;
+}
+
+.deck .card.show {
+  font-size: 33px;
+  display: initial;
+}
+
+.deck .card.match {
+  cursor: default;
+  background: #c8a1c6;
+  font-size: 33px;
+}
+
+.deck .card.show .img, .deck .card.match .img {
+  height: 125px;
+  width: 125px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.fa-star {
+  color: #ffd633;
+}
+
+.score-panel {
+  font-family: "equestria", sans-serif;
+  font-size: 24px;
+  text-align: left;
+  width: 345px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.score-panel, .stars, #modal .stars {
+  margin: 0 5px 0 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.score-panel, .stars li, #modal .stars li {
+  list-style: none;
+  display: inline-block;
+}
+
+.score-panel, .restart {
+  float: right;
+  cursor: pointer;
+}
+
+.fa, .fa-repeat, .moves, .timer, .close, .modal-title, .modal-rating {
+  padding: 0;
+}
+
+/*
+ * Styles for the Modal
+ */
+
+.totalStars {
+  color: #ffd633;
+}
+
+.close {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: #d3d3d3;
+}
+
+.close:hover {
+  background-color: #a9a9a9;
+}
+
+/*Modal Box from: https://www.w3schools.com/howto/howto_css_modals.asp*/
+
+#modal {
+  display: none;
+  height: 100vh;
+  padding-top: 30vh;
+  text-align: center;
+  background-color: #fff;
+}
+
+.modal-content {
+  font-family: "equestria", sans-serif;
+  font-size: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.modal-text {
+  font-family: "equestria", sans-serif;
+  font-size: 24px;
+}
+
+p.modal-text {
+  font-family: "equestria", sans-serif;
+  font-size: 24px;
+  color: #ee3996;
+}
+
+#modal>button {
+  font-family: "equestria", sans-serif;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #91228f;
+  font-size: 20px;
+}
+
+.hide-modal {
+  visibility: hidden;
+  margin: auto;
+}
+
+.show-modal {
+  visibility: block;
+  margin: auto;
+  background-color: #c9c9c9;
+  text-align: center;
+  width: 60%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+ * Animations (=if cards on deck MATCH, use CSS Animation ´transform´)
+ * Tutorial from: https://css-tricks.com/almanac/properties/a/animation/;
+ */
+
+.deck .card.open {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.deck .card.show {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+.deck .card.match, .deck .card.show .img, .deck .card.match .img {
+  -webkit-animation: verifyCards 0.5s;
+  animation: verifyCards 0.5s;
+  background-color: #be7fa5;
+}
+
+/* Keyframes*/
+
+@-webkit-keyframes verifyCards {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes verifyCards {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*
+ * Media Queries
+ * to make the Game responsive on mobile devices
+ */
+
+/* Mobile phone*/
+
+@media only screen and (max-width: 450px) {
+  .score-panel {
+    font-size: 0.8em;
+  }
+  .modal {
+    font-size: 1em;
+  }
+}
+
+/* Tablets*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: url(https://orig00.deviantart.net/0ffb/f/2012/142/d/7/bg1small2_by_mlp_vector_collabs-d50sego.png) right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/*Desktop */
+
+@media only screen and (max-width: 800px) {
+  .deck {
+    padding: 40px 10px 10px;
+  }
+  .score-panel {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .deck .card {
+    width: 80vw;
+    height: 80vw;
+    grid-template-columns: repeat(4, 15vw);
+    grid-template-rows: repeat(4, 15vw);
+    grid-gap: 15px;
+  }
+  .deck .card.open {
+    padding: 10px;
+  }
+}
