@@ -3,7 +3,7 @@
 - Created for the Udacity Nanodegree Front End Web Developer- (Full Google Scholarship).
 
 ## Instructions
-- Students are given a `startercode`(HTML and CSS styling) of the static Memory Game project.
+- Students are given a `Udacity startercode`(HTML and CSS styling) of the static Memory Game project.
 - __Goal__ is to convert the static project into an interative App game. 
 - Modifying HTML, CSS but basically the JavaScript file.
 
@@ -12,8 +12,11 @@ Play the [My Little Pony Matching Game](https://dianavile.github.io/Memory/).
 
 ## Mockup
 Here you see the final result:
+- Startscreen:
 ![StartScreen](https://github.com/dianavile/Memory/blob/master/img/StartGame_Screen.png)
+- The game:
 ![Game](https://github.com/dianavile/Memory/blob/master/img/My_Litle_Pony_Matching_Game.png)
+-Game End message: 
 ![Modal](https://github.com/dianavile/Memory/blob/master/img/Modal.png)
 
 ## Game Logics
@@ -50,16 +53,18 @@ In order to let the game work properly, the following TODO list is needed:
 - Move counter
 
 ## Code Dependencies:
-This project is created based on the [Udacity starterscode]()
-and with help of the following code, fonts, images, backgrounds & emojis:
+- This project is created based on the `Udacity starterscode`.
+- I used the following codesnippets, fonts, images, backgrounds & emojis to create the game:
 
-- __Javascript:__[Shuffle function](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array/2450976#2450976),[DOM](https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/), [How javascript works?](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)
-- __CSS:__ [Font style](https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp), [Modal Box](https://www.w3schools.com/howto/howto_css_modals.asp),[CSS Animations](https://css-tricks.com/almanac/properties/a/animation/)- "transform"
-- __GIT:__[Learn Git Branching](https://learngitbranching.js.org/), [Oh Shit Git](http://ohshitgit.com/).  
+- __Javascript:__ [Shuffle function](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array/2450976#2450976), [DOM](https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/), [How javascript works?](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)
+- __CSS:__ [Font style](https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp), [Modal Box](https://www.w3schools.com/howto/howto_css_modals.asp), [CSS Animations](https://css-tricks.com/almanac/properties/a/animation/)- "transform"
+//not able to use due to issues with GitHub app:
+- __GIT:__[Learn Git Branching](https://learngitbranching.js.org/), [Oh Shit Git](http://ohshitgit.com/). 
 
-- __Fonts__:"Equestria.tff" from [Fontsplace](http://www.fontsplace.com/equestria-free-font-download.html)
-
-- __Images, Background & Emojis__:Backgroundpicture: [DevianArt by AllowedPlz ©2012-2018 MLP-Vector-Collabs*](https://orig00.deviantart.net/0ffb/f/2012/142/d/7/bg1small2_by_mlp_vector_collabs-d50sego.png), Pictures: [My Little Pony Wikia page](http://mlp.wikia.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki) & Emoji(unicode):  [Emojipedia](https://emojipedia.org/)
+- __Fonts:__"Equestria.tff" from [Fontsplace](http://www.fontsplace.com/equestria-free-font-download.html)
+- __Backgroundpicture:_: [DevianArt by AllowedPlz ©2012-2018 MLP-Vector-Collabs*](https://orig00.deviantart.net/0ffb/f/2012/142/d/7/bg1small2_by_mlp_vector_collabs-d50sego.png)
+- __Images:__ [My Little Pony Wikia page](http://mlp.wikia.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki) 
+- __Emojis(unicode):__ [Emojipedia](https://emojipedia.org/)
 
 ## Contributing
 
